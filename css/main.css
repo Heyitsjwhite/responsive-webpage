@@ -109,18 +109,30 @@ html {
 body {
   /* set height to 100% - these are important for allowing content to vertically align */
   height: 100%;
-  /* justify-content: center;
-  align-items: center; */
+
 }
 
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.808);
+    width: 100%;
+    margin: 0;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 3.5em;
+    font-weight:bold;
+    padding-left: 1em;
+}
 .wrapper {
   /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  height: 100%;
-  width: 100%;
+  margin: 5em;
 }
 
 #content {
@@ -133,22 +145,48 @@ body {
   color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  font-size: 3em;
+  font-size: 1.5em;
   text-align: justify;
   line-height: 1.5em;
   border-radius: 25px;
-  padding: 0px 50px;
-  width: 700px;
-  /* height: 300px; */
+  padding: 0 1.125em;
+  width: 80%;
+ 
 }
 
 #content p span {
   font-family: 'Lora', sans-serif;
+  font-weight: bolder;
+  font-size: 1.125em;
+  color: #ffffff;
 }
 
+/*********** ABOUT ****************/
 
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+    border-top: 3px solid #999;
+    border-bottom: 3px solid #999;
+}
 
-
+.about-info-1, .about-info-2, .about-info-3 {
+    display: flex;
+    margin: 1.25em;   
+    justify-content: space-between;
+    align-items: center;
+    background:rgba(37, 36, 36, 0.904);
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.125em;
+    border-radius: 25px;
+    padding: 0 1.25em; 
+    width: 30%;
+    }
 
 /* ==========================================================================
    Helper classes
